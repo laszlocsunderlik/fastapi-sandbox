@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import post, user, auth, vote
+from app.routers import *
 
 
 # models.Base.metadata.create_all(bind=engine)
@@ -22,4 +22,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Hello World!!!!!"}
+    return {"message": "bind mount works NOW!"}
