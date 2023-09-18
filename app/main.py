@@ -22,4 +22,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "bind mount works NOW!"}
+    return {"message": "UBUNTU!"}
